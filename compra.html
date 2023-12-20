@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>QuadX - O Melhor em Tecnologia Computacional</title>
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body id="compra">
+	<header>
+		<img src="header/logo_comp.png" alt="QuadX Logo Complemento" id="logo_comp1">
+		<a href="produtos.html"><img src="header/logo.png" alt="QuadX Logo" id="logo"></a>
+		<img src="header/logo_comp.png" alt="QuadX Logo Complemento" id="logo_comp2">
+	</header>
+	<main>
+		<form>
+            <fieldset>
+                <legend>Compra</legend>
+                <p>
+                    Selecione o Produto:
+                    <select name="tipo_pagamento" id="tipo_pagamento">
+                        <option value="">Nenhum</option>
+                        <option value="boleto">Placa de Vídeo</option>
+                        <option value="cartao">Processador</option>
+                        <option value="paypal">SSD</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" size="14" placeholder="123.456.789-09" maxlength="14">
+                </p>
+                <p>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" size="60" placeholder="Digite o Endereço" maxlength="60">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" size="20" placeholder="Digite seu E-mail" maxlength="20">
+                </p>
+                <p>
+                    Tipo de Pagamento:
+                    <select name="tipo_pagamento" id="tipo_pagamento">
+                        <option value="">Nenhum</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="debito">Débito</option>
+                    </select>
+                </p>
+            </fieldset>
+            <input type="submit" id="bttn">
+		</form>
+        <!--<a href="compra.html"><button><img src="main/botaocomprar.png" width="25px"></button></a>-->
+	</main>
+	<footer>
+		<p>Atendimento: atendimento@quadx.com - (0XX) 99999-9999 / (0XX) 88888-8888</p>
+	</footer>
+</body>		
+</html>

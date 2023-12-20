@@ -1,0 +1,366 @@
+/* GLOBAL */
+
+body {
+    font-family: "Cabin", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #1E1E23;
+    margin-left: auto;
+	margin-right: auto;
+    width: 970px;
+
+}
+
+header img#logo_comp2 {
+	transform: scaleX(-1);
+}
+
+main{
+	margin-top: 50px;
+	background-color: #19191E;
+	border: solid 1px #141419;
+	box-shadow: 0 0 5px #141419;
+}
+
+main h1, main h2, main h3{
+	font-family: Helvetica;
+}
+
+main h1{
+	text-align: center;
+}
+footer{
+	font-family: Helvetica;
+}
+
+/* INDEX */
+
+#index {
+    margin-left: auto;
+	margin-right: auto;
+    width: auto;
+}
+
+#index div#indexMold {
+    padding: 100px 0 100px 0;
+    margin: 12.5% 0 0 3.125%;
+    background-image: linear-gradient(to bottom right, rgb(200, 0, 255), rgb(0 ,200, 255));
+    width: 600px;
+    height: 360px;
+}
+
+#index div#indexMoldInside {
+    font-size: 1.25em;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+#index div#indexMoldInside h1,
+#index div#indexMoldInside h2,
+#index div#indexMoldInside h3 {
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+#index div#indexMoldInside a {
+    padding: 15px 25px 15px 25px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: rgba(255, 0, 100, 1);
+}
+
+#index div#indexMoldInside a:hover {
+    background-color: #FFFFFF;
+    color: rgba(225, 0, 100, 1);
+}
+
+#index div#indexMold2{
+    margin-top: -560px;
+    margin-left: 3.125%;
+}
+
+#index div#indexMold2 img{
+    display: block;
+    margin-left: 600px;
+}
+
+/* PRODUTOS */
+
+#produtos a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+#produtos a h2 {
+    border: 2px solid #ffffff;
+    padding: 80px 400px 80px 400px;
+    font-family: "Cabin";
+    font-size: 1.8em;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+#produtos a#bnnr1 h2 {
+    background-image: url(pag_produtos/banner1.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+}
+
+#produtos a#bnnr2 h2 {
+    background-image: url(pag_produtos/banner2.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+}
+
+#produtos a#bnnr3 h2 {
+    background-image: url(pag_produtos/banner3.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: 100%;
+}
+
+@keyframes MostrarBanner {
+  0%   {filter: grayscale(1);}
+  100% {filter: grayscale(0);}
+}
+
+@keyframes EsconderBanner {
+  0%   {filter: grayscale(0);}
+  100% {filter: grayscale(1);}
+}
+
+#produtos a#bnnr1 h2,
+#produtos a#bnnr2 h2,
+#produtos a#bnnr3 h2 {
+    animation-name: EsconderBanner;
+    animation-duration: 0.8s;
+    filter: grayscale(1);
+}
+
+#produtos a#bnnr1 h2:hover,
+#produtos a#bnnr2 h2:hover,
+#produtos a#bnnr3 h2:hover {
+    animation-name: MostrarBanner;
+    animation-duration: 0.8s;
+    filter: grayscale(0);
+}
+
+/* PLACA DE VÍDEO, PROCESSADOR E SSD */
+
+body#placadevideo main a img#seta1,
+body#processador main a img#seta1,
+body#ssd main a img#seta1{
+    margin-top: 196px; 
+	margin-left: 25px;
+	float: left;
+}
+
+body#placadevideo main img#placa,
+body#processador main img#processador,
+body#ssd main img#ssd {
+	border-radius: 25px;
+	background-color: #141419;
+	margin-left: 40px;
+}
+
+body#placadevideo main img#seta2,
+body#processador main img#seta2,
+body#ssd main img#seta2 {
+	margin-right: 25px;
+	float: right;
+	margin-top: 196px;
+	transform: scaleX(-1);
+}
+
+body#processador main a img#seta1 {
+    margin-top: 190px;   
+}
+
+body#processador main img#processador {
+    margin-left: 139px;
+	padding: 10px 10px 0 10px;
+}
+
+body#processador main img#seta2 {
+	margin-top: 190px;
+}
+
+body#placadevideo main img#icon_info, main img#icon_desc,
+body#processador main img#icon_info, main img#icon_desc,
+body#ssd main img#icon_info, main img#icon_desc{
+	float: left;
+	margin-left: 115px; 
+	padding-top: 25px;
+}
+
+body#placadevideo main h3,
+body#processador main h3,
+body#ssd main h3 {
+	line-height: 0;
+	margin-left: 165px;
+	padding-top: 25px;
+}
+
+body#placadevideo #desc_box,
+body#processador #desc_box,
+body#ssd #desc_box{
+	background-color: #141419;
+	border-radius: 25px;
+	margin-left: 141px;
+	margin-right: 151px;
+}
+
+body#placadevideo #desc_box p,
+body#processador #desc_box p,
+body#ssd #desc_box p{
+	letter-spacing: 0.25px;
+	text-align: justify;
+	padding: 25px 25px 25px 25px;
+}
+
+body#placadevideo #info_box,
+body#processador #info_box,
+body#ssd #info_box{
+	margin-left: 115px;
+	margin-right: 115px;
+	float: left;
+}
+
+body#placadevideo #info_box fieldset,
+body#processador #info_box fieldset,
+body#ssd #info_box fieldset{
+	background-color: #141419;
+	background-color: #000000;
+	border: none;
+	border-radius: 12.5px;
+	margin-left: 26px;
+	float: left;
+	width: 300px;
+	height: 135px;
+}
+
+body#placadevideo #info_box fieldset legend,
+body#processador #info_box fieldset legend,
+body#ssd #info_box fieldset legend{
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+	border: none;
+	border-radius: 6.25px;
+	padding: 5px 5px 5px 5px;
+}
+
+#info_box fieldset#field_gpu,
+#info_box fieldset#field_energia{
+	line-height: 25px;
+	margin-bottom: 26px;
+	margin-top: 10px;
+}
+
+#info_box fieldset#field_sistema,
+#info_box fieldset#field_memoria{
+	line-height: 20px;
+}
+
+#info_box fieldset#field_conexao,
+#info_box fieldset#field_spec,
+#info_box fieldset#field_outros{
+	line-height: 22px;
+}
+
+body#placadevideo main a button,
+body#processador main a button,
+body#ssd main a button{
+	border: none;
+	height: 50px;
+	width: 100px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 434px;
+	border-radius: 10px;
+	background-color: #28C828;
+}
+
+body#placadevideo main a button p,
+body#processador main a button p,
+body#ssd main a button p{
+	line-height: 0px;
+	float: right;
+	font-weight: bold;
+}
+
+body#placadevideo main a button:hover,
+body#processador main a button:hover,
+body#ssd main a button:hover{
+	background-color: #D737D7;
+	border: solid 2px #000000;
+	filter: invert();
+	cursor: pointer;
+}
+
+/* COMPRA */
+
+body#compra main form fieldset{
+    margin: 32px 32px 32px 32px;
+    background-color: #141419;
+    border: solid 2px #FFFFFF;
+    border-radius: 25px;
+}
+
+body#compra main form fieldset legend{
+    padding: 8px 8px 8px 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+body#compra main form p{
+    font-family: "Cabin", Helvetica, Arial, sans-serif;
+    margin-left: 16px;
+    font-size: 1.2em;
+}
+
+body#compra main form input{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background-color: #141419;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    margin-left: 4px; 
+    color: #a5a5a5
+}
+
+body#compra main form input:focus{
+    outline: none;
+}
+
+body#compra main form p select{
+    font-size: 1em;
+    color: #a5a5a5;
+    background-color: #141419;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+body#compra main form p select:focus{
+    outline: none;
+}
+
+body#compra main form input#bttn{
+	border: none;
+	height: 50px;
+	width: 500px;
+    margin: -8px 0 16px 234px;
+	border-radius: 10px;
+	background-color: #28C828;
+    font-weight: bold;
+    font-size: 1em;
+    color: #FFFFFF
+}
+
+body#compra main form input#bttn:hover{
+    background-color: #50C850;
+    text-decoration: underline;
+	cursor: pointer;
+}
